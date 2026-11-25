@@ -1,0 +1,15 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+.env.*
+*.pem
+*.ppk
+*.key
+.aws/
+dist/
+build/
+*.zip
+.vscode/

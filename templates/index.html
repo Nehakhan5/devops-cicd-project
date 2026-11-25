@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps CI/CD Dashboard</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <nav>
+        <h2>DevOps Dashboard</h2>
+        <span class="badge">{{ environment }}</span>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <p class="subtitle">AUTOMATED CI/CD PIPELINE</p>
+            <h1>{{ message }}</h1>
+            <p>Continuous Integration and Continuous Deployment
+               using GitHub Actions and AWS.</p>
+        </section>
+
+        <section class="dashboard">
+            <div class="card">
+                <h3>Application Version</h3>
+                <h2>v{{ version }}</h2>
+            </div>
+
+            <div class="card">
+                <h3>Application Status</h3>
+                <h2 class="green">Online</h2>
+            </div>
+
+            <div class="card">
+                <h3>Environment</h3>
+                <h2>{{ environment }}</h2>
+            </div>
+
+            <div class="card">
+                <h3>Framework</h3>
+                <h2>Python Flask</h2>
+            </div>
+        </section>
+
+        <section class="pipeline">
+            <h2>CI/CD Architecture</h2>
+            <div class="flow">
+                <span>GitHub</span>
+                <span>→</span>
+                <span>Testing</span>
+                <span>→</span>
+                <span>Security</span>
+                <span>→</span>
+                <span>Build</span>
+                <span>→</span>
+                <span>AWS S3</span>
+                <span>→</span>
+                <span>EC2</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        University DevOps Assignment 2026 |
+        GitHub Actions &amp; AWS
+    </footer>
+
+</body>
+</html>
