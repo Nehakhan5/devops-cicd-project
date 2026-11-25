@@ -4,8 +4,9 @@ from flask import Flask, render_template, jsonify
 
 app = Flask(__name__)
 
-VERSION = "1.0.0"
-WELCOME_MESSAGE = "Welcome to My DevOps Project!"
+VERSION = "2.0.0"
+WELCOME_MESSAGE = "Successfully Deployed Using CI/CD!"
+
 
 
 @app.route("/")
